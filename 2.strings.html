@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+<body>
+    <h2>Strings(Cadenas de texto)</h2>
+    <script>
+        let nombre = 'Jordi'
+        let cadena = new String('Hola mundo') /*con el constructor(string)*/
+        console.log(nombre)
+        console.log(cadena)
+
+        /*numero de caracteres*/
+        let name = 'Josue'
+        console.log(name.length) //numero de caracteres
+
+        let titulo = 'La supervivencia'
+        console.log(titulo.toUpperCase())//para convertir en mayuscula
+
+        let titulo1 = 'La poblacion animal'
+        console.log(titulo1.toLowerCase())// para convertir en minuscula
+
+        let lorem = '   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolore asperiores laudantium hic, laboriosam nam commodi explicabo quis consequuntur quasi et tempora! Dignissimos libero enim officiis quaerat hic, doloremque odit?'
+
+        console.log(lorem.includes('libero')) //para ver si es que se encuentra esa palabra dentro
+        console.log(lorem.includes('jordi')) 
+        // console.log(lorem)
+        console.log(lorem.trim()) // para eliminar los espacios de los costados que deje o cualquier espacio que haga yo mismo
+
+        let lorem1 = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, nam? Fuga aspernatur nihil expedita fugiat, praesentium porro dignissimos quo, blanditiis facilis commodi accusamus illum, molestiae laudantium quam. Assumenda, excepturi repellat.'
+
+        console.log(lorem1.split(","))
+    </script>
+</body>
+</html>

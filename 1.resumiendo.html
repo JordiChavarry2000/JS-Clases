@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js</title>
+</head>
+<body>
+    <h2>Resumen de lo aprendido-basico</h2>
+    <script>
+        console.log("hola a todos")
+        var hola = "Hola"
+        var hello = "Hello"
+        console.log(hola)
+        console.log(hello)
+        /*la el var se guarda en el ambito global mientras que el let es de ambito de bloque y no se guarda en el global*/
+        // console.log(window)
+        /*Var vs Let*/
+        console.log("==================VAR====================")
+        var lenguaje = "Python"
+        console.log(lenguaje)
+        {
+            var lenguaje = "JavaScript"
+            console.log(lenguaje)
+        }
+        console.log(lenguaje)
+        console.log("==================LET====================")
+        let curso = "Matematicas"
+        console.log(curso)
+        {
+            let curso = "Ciencias"
+            console.log(curso)
+        }
+        console.log(curso)
+        /*el var no respeta los bloques en cambio en let respeta los bloques que tiene*/
+        console.log("===============Constantes================")
+        const PI = 3.141516
+        console.log(PI)
+        //este es un objeto
+        const datos = {
+            nombre : 'Jordi',
+            apellidos : 'Chavarry',
+            edad : 22
+        }
+        console.log(datos)
+        //este es un arreglo
+        const animales = ['cocodrilo','leon','iguana','antilope']
+        console.log(animales)
+
+        // agregando datos
+        datos.correo = 'jbrando27@hotmail.com'
+        animales.push('cigueña')
+        console.log('========================================')
+        console.log(datos)
+        console.log(animales)
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Templates Strings</title>
+</head>
+<body>
+    <h2>Templates Strings</h2>
+
+    <script>
+        //concatenacion
+        let nombre = "Jordi"
+        let apellido = "Chavarry"
+        let saludo = "Buenos dias"
+
+        let resultado = "Hey " + saludo + " " +  nombre + " " + apellido + " como te va"
+        console.log(resultado)
+        
+        /*Interpolacion de variables*/
+        //template string
+        let resultado1 = `Hey ${nombre} ${apellido} te deseo ${saludo}`
+        console.log(resultado1)
+
+        let ul =`<ul>
+                    <li>Primavera</li>
+                    <li>Verano</li>
+                    <li>Otoño</li>
+                    <li>Invierno</li>
+                 </ul>`
+
+        console.log(ul)
+    </script>
+</body>
+</html>
